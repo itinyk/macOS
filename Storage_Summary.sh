@@ -17,7 +17,7 @@ echoOut "Data Drive Size:
 $(df -h /dev/disk3s* 2>/dev/null | sort -k3 -h -r)
 "
 
-echoOut "Common Cache Directory Sizes:
+echoOut "Common Cache Directory Sizes11:
 
 $(du -h -d1 /Library/Addigy/ansible/packages 2>/dev/null | sort -h -r)
 $(du -h -d1 /Library/Addigy/download-cache/downloaded 2>/dev/null | sort -h -r)
@@ -47,4 +47,3 @@ if [[ "$(tmutil listlocalsnapshots / | grep -c 'com.apple.TimeMachine' )" -gt 0 
         echoOut "No Local TimeMachine Snapshots.
         "
 fi
-Test
