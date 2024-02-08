@@ -47,3 +47,4 @@ if [[ "$(tmutil listlocalsnapshots / | grep -c 'com.apple.TimeMachine' )" -gt 0 
         echoOut "No Local TimeMachine Snapshots.
         "
 fi
+Test
