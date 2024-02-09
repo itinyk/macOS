@@ -21,6 +21,7 @@ echoOut "Common Cache Directory Sizes:
 
 $(du -h -d1 /Library/Addigy/ansible/packages 2>/dev/null | sort -h -r)
 $(du -h -d1 /Library/Addigy/download-cache/downloaded 2>/dev/null | sort -h -r)
+$(du -h -d1 /Library/Addigy/download-cache/downloading 2>/dev/null | sort -h -r)
 $(du -h -d1 /users/$loggedInUser/Library/CloudStorage 2>/dev/null | sort -h -r)
 $(du -h -d1 /users/$loggedInUser/Library/Adobe 2>/dev/null | sort -h -r)
 $(du -h -d1 "/users/$loggedInUser/Library/Application Support/Adobe/Common/" 2>/dev/null | sort -h -r)
