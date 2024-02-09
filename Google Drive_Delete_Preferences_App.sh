@@ -1,5 +1,4 @@
 #!/bin/bash
-
 loggedInUser=$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')
 
 if [ "$loggedInUser" == "" ]; then
@@ -13,7 +12,9 @@ killall -2 "Google Drive"
 
 sleep 2
 
-rm -rf /Users/$loggedInUser/Library/Application\ Support/Google/DriveFS/
+rm -rf "/Users/$loggedInUser/Library/Application Support/Google/DriveFS"
 rm -rf "/Applications/Google Drive.app"
+
+sleep 2
+
 killall -2 Finder
-mv /Users/$loggedInUser/Library/CloudStorage/ /Users/Shared/CloudStorage/
