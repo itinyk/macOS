@@ -8,13 +8,13 @@ else
     echo "$loggedInUser"
 fi
 
-killall -2 "Google Drive"
+killall -9 "Google Drive"
 
-sleep 2
+sleep 5
 
 rm -rf "/Users/$loggedInUser/Library/Application Support/Google/DriveFS"
 rm -rf "/Applications/Google Drive.app"
 
-sleep 2
+sleep 5
 
-killall -2 Finder
+killall -9 Finder

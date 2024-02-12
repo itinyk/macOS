@@ -8,9 +8,9 @@ else
     echo "$loggedInUser"
 fi
 
-killall -2 "Google Chrome"
+killall -9 "Google Chrome"
 
-sleep 2
+sleep 5
 
 rm -rf "/Users/$loggedInUser/Library/Application Support/Google Chrome"
 rm -rf "/Applications/Google Chrome.app"

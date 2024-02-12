@@ -8,12 +8,12 @@ else
     echo "$loggedInUser"
 fi
 
-killall -2 "Google Chrome"
+killall -9 "Google Chrome"
 
-sleep 2
+sleep 5
 
 rm -rf "/Users/$loggedInUser/Library/Application Support/Google/Chrome"
 
-sleep 2
+sleep 5
 
 open -a "Google Chrome"
