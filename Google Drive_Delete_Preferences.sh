@@ -13,6 +13,7 @@ killall -9 "Google Drive"
 sleep 5
 
 rm -rf "/Users/$loggedInUser/Library/Application Support/Google/DriveFS"
+rm -rf "/Users/$loggedInUser/Library/Application Support/FileProvider/com.google.drivefs.fpext"
 
 sleep 5
 
