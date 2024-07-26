@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>timeServer</key>
-	<string> com.company.application,my.domain,time.org,time.apple.com</string>
+	<string>time.apple.com</string>
 </dict>
 </plist>
